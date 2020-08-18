@@ -1,3 +1,4 @@
+touch ~/test.txt
 echo "version: '3'
 services:
   lakefs:
