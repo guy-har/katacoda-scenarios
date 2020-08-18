@@ -1,4 +1,5 @@
 touch ~/test.txt
+export LAKEFS_STATS_ENABLED=false
 mkdir ~/lakeFS
 echo "version: '3'
 services:
