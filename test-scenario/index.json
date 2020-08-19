@@ -4,19 +4,7 @@
   "difficulty": "Beginner",
   "time": "10",
   "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "sample.txt",
-          "target": "/tmp/"
-        },
-        {
-          "file": "lakectl",
-          "target": "/usr/local/bin/",
-          "chmod": "+x"
-        }
-      ]
-    },
+
     "steps": [
       {
         "title": "Repository commands",
@@ -41,6 +29,19 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "sample.txt",
+          "target": "/tmp/"
+        },
+        {
+          "file": "lakectl",
+          "target": "/usr/local/bin/",
+          "chmod": "+x"
+        }
+      ]
     }
   },
   "environment": {
