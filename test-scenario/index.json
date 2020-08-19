@@ -4,18 +4,27 @@
   "difficulty": "Beginner",
   "time": "10",
   "details": {
+    "assets": {
+       "host01" [
+	{"file": "sample.txt", "target":"~/"}
+       ],
+     },
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Repository commands",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "FS commands",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Commit commands",
         "text": "step3.md"
+      }
+      {
+        "title": "Diff commands",
+        "text": "step4.md"
       }
     ],
     "intro": {
