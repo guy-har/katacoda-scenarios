@@ -1,8 +1,8 @@
 {
-  "title": "Hello World Scenario",
-  "description": "Your First Scenario",
+  "title": "Lake versioning 101",
+  "description": "getting started with lakeFS commands ",
   "difficulty": "beginner",
-  "time": "2 minutes",
+  "time": "10 minutes",
   "details": {
     "steps": [{
       "title": "Step 1 - Run Command",

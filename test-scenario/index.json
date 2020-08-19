@@ -5,9 +5,9 @@
   "time": "10",
   "details": {
     "assets": {
-       "host01" [
-	{"file": "sample.txt", "target":"~/"}
-       ],
+       "host01" : [
+	    {"file": "sample.txt", "target":"~/"}
+       ]
      },
     "steps": [
       {
@@ -21,7 +21,7 @@
       {
         "title": "Commit commands",
         "text": "step3.md"
-      }
+      },
       {
         "title": "Diff commands",
         "text": "step4.md"
