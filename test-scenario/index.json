@@ -35,11 +35,6 @@
         {
           "file": "sample.txt",
           "target": "/tmp/"
-        },
-        {
-          "file": "lakectl",
-          "target": "/usr/local/bin/",
-          "chmod": "+x"
         }
       ]
     }
