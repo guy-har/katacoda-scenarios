@@ -23,5 +23,5 @@ services:
 
 cd ~/lakeFS/
 docker-compose up -d
-docker-compose exec lakefs bash
+docker-compose exec lakefs sh
  
