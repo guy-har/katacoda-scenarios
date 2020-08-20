@@ -11,7 +11,6 @@ services:
       LAKEFS_BLOCKSTORE_LOCAL_PATH: /home/lakefs
       LAKEFS_GATEWAYS_S3_DOMAIN_NAME: s3.local.lakefs.io:8000
     entrypoint: ["/app/wait-for", "postgres:5432", "--", "/app/lakefs", "run"]
-
   postgres:
     image: "postgres:11"
     environment:
