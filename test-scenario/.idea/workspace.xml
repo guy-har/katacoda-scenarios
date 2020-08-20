@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5ace3678-8891-41aa-aa88-1842772b799a" name="Default Changelist" comment="add step4.md">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+    </list>
+    <list id="564fbbff-fa11-4596-9e45-8017ff0d3c20" name="do not commit" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1gK0mfhHeXxryfIsbrfo59UfJxW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ace3678-8891-41aa-aa88-1842772b799a" name="Default Changelist" comment="" />
+      <changelist id="564fbbff-fa11-4596-9e45-8017ff0d3c20" name="do not commit" comment="" />
+      <created>1597848136167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597848136167</updated>
+      <workItem from="1597848137243" duration="55000" />
+      <workItem from="1597848210733" duration="5497000" />
+    </task>
+    <task id="LOCAL-00001" summary="bug fix">
+      <created>1597848317516</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597848317516</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add step4.md">
+      <created>1597848506422</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597848506422</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add lakectl">
+      <created>1597849082097</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597849082097</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add sample file">
+      <created>1597849225835</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597849225835</updated>
+    </task>
+    <task id="LOCAL-00005" summary="change order, should not to change anything">
+      <created>1597849716176</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597849716176</updated>
+    </task>
+    <task id="LOCAL-00006" summary="remove big file, not supported">
+      <created>1597850069399</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597850069399</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add avater and docker file">
+      <created>1597907761250</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597907761250</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bugfix" />
+    <MESSAGE value="bug fix" />
+    <MESSAGE value="add step4.md" />
+    <MESSAGE value="add lakectl" />
+    <MESSAGE value="add sample file" />
+    <MESSAGE value="change order, should not to change anything" />
+    <MESSAGE value="remove big file, not supported" />
+    <MESSAGE value="add avater and docker file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add avater and docker file" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="556" y="127" key="CommitChangelistDialog2" timestamp="1597907761120">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="556" y="127" key="CommitChangelistDialog2/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1597907761120" />
+    <state x="2476" y="127" key="CommitChangelistDialog2/1920.23.1920.1057/0.23.1920.1057@1920.23.1920.1057" timestamp="1597848317344" />
+    <state x="1510" y="476" key="VCS.ChangelistChooser" timestamp="1597907777795">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1510" y="476" key="VCS.ChangelistChooser/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1597907777795" />
+    <state x="560" y="291" key="Vcs.Push.Dialog.v2" timestamp="1597907765687">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="560" y="291" key="Vcs.Push.Dialog.v2/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1597907765687" />
+    <state x="2480" y="291" key="Vcs.Push.Dialog.v2/1920.23.1920.1057/0.23.1920.1057@1920.23.1920.1057" timestamp="1597848323556" />
+    <state x="2595" y="554" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597848163812">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2595" y="554" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.23.1920.1057/0.23.1920.1057@1920.23.1920.1057" timestamp="1597848163812" />
+    <state x="667" y="306" width="586" height="490" key="find.popup" timestamp="1597848688889">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="667" y="306" width="586" height="490" key="find.popup/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1597848688889" />
+    <state x="625" y="258" key="search.everywhere.popup" timestamp="1597848492199">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="625" y="258" key="search.everywhere.popup/1920.23.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1597848492199" />
+  </component>
+</project>
