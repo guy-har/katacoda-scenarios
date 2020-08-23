@@ -23,9 +23,7 @@ services:
     depends_on:
       - postgres
     volumes:
-      - type: bind
-        source: lakefs
-        target: /home/lakefs
+      - lakefs:/home/lakefs
     environment:
       LAKEFS_AUTH_ENCRYPT_SECRET_KEY: some random secret string
       LAKEFS_DATABASE_CONNECTION_STRING: postgres://lakefs:lakefs@postgres/postgres?sslmode=disable
@@ -44,9 +42,7 @@ services:
     depends_on:
       - lakefs
     volumes:
-      - type: bind
-        source: lakefs
-        target: /home/lakefs
+      - lakefs:/home/lakefs
 volumes:
   lakefs:
 EOS
