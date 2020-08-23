@@ -28,7 +28,7 @@ services:
       LAKEFS_AUTH_ENCRYPT_SECRET_KEY: some random secret string
       LAKEFS_DATABASE_CONNECTION_STRING: postgres://lakefs:lakefs@postgres/postgres?sslmode=disable
       LAKEFS_BLOCKSTORE_TYPE: local
-      LAKEFS_BLOCKSTORE_LOCAL_PATH: /home/lakefs
+      LAKEFS_BLOCKSTORE_LOCAL_PATH: /root/
       LAKEFS_GATEWAYS_S3_DOMAIN_NAME: s3.local.lakefs.io:8000
     entrypoint: ["/app/wait-for", "postgres:5432", "--", "/app/lakefs", "run"]
   postgres:
