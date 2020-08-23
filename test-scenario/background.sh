@@ -7,7 +7,7 @@ export LAKEFS_STATS_ENABLED=false
 cat <<EOS > setup-lakefs.sh
 #!/bin/bash
 wait-for localhost:8000
-LAKEFS_LOGGING_LEVEL=ERROR lakefs init --user-name demo | tail -3 > /home/lakefs/.lakectl.yaml
+LAKEFS_LOGGING_LEVEL=ERROR /app/lakefs init --user-name demo | tail -3 > /home/lakefs/.lakectl.yaml
 echo -e "server:\n  endpoint_url: http://localhost:8000/api/v1\n" >> /home/lakefs/.lakectl.yaml
 EOS
 chmod +x setup-lakefs.sh
