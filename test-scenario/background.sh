@@ -24,7 +24,7 @@ services:
       - postgres
     volumes:
       - type: bind
-        source: ./lakefs
+        source: lakefs
         target: /home/lakefs
     environment:
       LAKEFS_AUTH_ENCRYPT_SECRET_KEY: some random secret string
@@ -45,8 +45,10 @@ services:
       - lakefs
     volumes:
       - type: bind
-        source: ./lakefs
+        source: lakefs
         target: /home/lakefs
+volumes:
+  lakefs:
 EOS
 
 docker-compose pull
