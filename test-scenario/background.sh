@@ -1,4 +1,6 @@
 #!/bin/sh
+set -o pipefail
+set -e
 touch ~/test.txt
 export LAKEFS_STATS_ENABLED=false
 mkdir ~/lakefs
@@ -11,7 +13,7 @@ echo -e "server:\n  endpoint_url: http://localhost:8000/api/v1\n" >> /home/lakef
 EOS
 chmod +x lakefs/setup-lakefs.sh
 
-cat > /home/lakefs/docker-compose.yaml <<<EOS
+cat > /home/lakefs/docker-compose.yaml <<EOS
 version: '3'
 services:
   lakefs:
