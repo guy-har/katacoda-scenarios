@@ -6,6 +6,7 @@ export LAKEFS_STATS_ENABLED=false
 
 cat <<EOS > run-lakefs.sh
 #!/bin/bash
+export LAKEFS_STATS_ENABLED=false
 wait-for postgres:5432
 LAKEFS_LOGGING_LEVEL=ERROR /app/lakefs init --user-name demo | tail -3 > /home/lakefs/.lakectl.yaml
 echo -e "server:\n  endpoint_url: http://localhost:8000/api/v1\n" >> /home/lakefs/.lakectl.yaml
@@ -39,7 +40,5 @@ services:
 EOS
 
 docker-compose pull
-echo "done" >> /root/katacoda-finished
 docker-compose up -d
-echo "done" >> /root/katacoda-background-finished
-
+docker-compose exec lakefs sh
