@@ -45,6 +45,11 @@ services:
       - lakefs:/home/lakefs
 volumes:
   lakefs:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./lakefs
 EOS
 
 docker-compose pull
