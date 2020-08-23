@@ -39,7 +39,7 @@ services:
 EOS
 
 docker-compose pull
-#echo "done" >> /root/katacoda-finished
+echo "done" >> /root/katacoda-finished
 docker-compose up -d
-#echo "done" >> /root/katacoda-background-finished
+echo "done" >> /root/katacoda-background-finished
 
