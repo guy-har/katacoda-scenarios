@@ -13,7 +13,7 @@ echo -e "server:\n  endpoint_url: http://localhost:8000/api/v1\n" >> /home/lakef
 EOS
 chmod +x lakefs/setup-lakefs.sh
 
-cat <<EOS > /home/lakefs/docker-compose.yaml
+cat <<EOS > docker-compose.yaml
 version: '3'
 services:
   lakefs:
