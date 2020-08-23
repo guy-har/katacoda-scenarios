@@ -45,7 +45,7 @@ services:
       - ./lakefs:/home/lakefs
 EOS
 
-
+docker-compose pull
 echo "done" >> /root/katacoda-finished
 docker-compose up -d
 echo "done" >> /root/katacoda-background-finished
