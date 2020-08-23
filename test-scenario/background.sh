@@ -14,7 +14,7 @@ EOS
 chmod +x lakefs/setup-lakefs.sh
 
 cat <<EOS > docker-compose.yaml
-version: '3'
+version: '3.8'
 services:
   lakefs:
     image: "treeverse/lakefs:latest"
@@ -23,7 +23,9 @@ services:
     depends_on:
       - postgres
     volumes:
-      - ./lakefs:/home/lakefs:rw
+      - type: bind
+        source: ./lakefs
+        target: /home/lakefs
     environment:
       LAKEFS_AUTH_ENCRYPT_SECRET_KEY: some random secret string
       LAKEFS_DATABASE_CONNECTION_STRING: postgres://lakefs:lakefs@postgres/postgres?sslmode=disable
@@ -42,7 +44,9 @@ services:
     depends_on:
       - lakefs
     volumes:
-      - ./lakefs:/home/lakefs
+      - type: bind
+        source: ./lakefs
+        target: /home/lakefs
 EOS
 
 docker-compose pull
