@@ -22,33 +22,23 @@ services:
     depends_on:
       - postgres
     volumes:
-      - lakefsdata:/home/lakefs
+      - ./run-lakefs.sh:/app/run-lakefs.sh:ro
     environment:
       LAKEFS_AUTH_ENCRYPT_SECRET_KEY: some random secret string
       LAKEFS_DATABASE_CONNECTION_STRING: postgres://lakefs:lakefs@postgres/postgres?sslmode=disable
       LAKEFS_BLOCKSTORE_TYPE: memory
       LAKEFS_BLOCKSTORE_LOCAL_PATH: /home/
       LAKEFS_GATEWAYS_S3_DOMAIN_NAME: s3.local.lakefs.io:8000
-    entrypoint: ["/app/wait-for", "postgres:5432", "--", "/app/lakefs", "run"]
+    entrypoint: ["/bin/sh", "/app/run-lakefs.sh"]
   postgres:
     image: "postgres:11"
     environment:
       POSTGRES_USER: lakefs
       POSTGRES_PASSWORD: lakefs
-  lakefs-setup:
-    image: "treeverse/lakefs:latest"
-    command: /setup-lakefs.sh
-    depends_on:
-      - lakefs
-    volumes:
-      - ./setup-lakefs.sh:/setup-lakefs.sh:ro
-      - lakefsdata:/home/lakefs
-volumes:
-  lakefsdata:
 EOS
 
 docker-compose pull
-echo "done" >> /root/katacoda-finished
+#echo "done" >> /root/katacoda-finished
 docker-compose up -d
-echo "done" >> /root/katacoda-background-finished
+#echo "done" >> /root/katacoda-background-finished
 
