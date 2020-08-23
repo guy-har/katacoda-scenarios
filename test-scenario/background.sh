@@ -23,7 +23,7 @@ services:
     depends_on:
       - postgres
     volumes:
-      - ./lakefs:/home/lakefs
+      - ./lakefs:/home/lakefs:rw
     environment:
       LAKEFS_AUTH_ENCRYPT_SECRET_KEY: some random secret string
       LAKEFS_DATABASE_CONNECTION_STRING: postgres://lakefs:lakefs@postgres/postgres?sslmode=disable
