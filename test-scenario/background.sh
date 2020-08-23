@@ -5,7 +5,7 @@ touch ~/test.txt
 export LAKEFS_STATS_ENABLED=false
 mkdir ~/lakefs
 
-cat >lakefs/setup-lakefs.sh<<EOS
+cat <<EOS > lakefs/setup-lakefs.sh
 #!/bin/bash
 wait-for localhost:8000
 LAKEFS_LOGGING_LEVEL=ERROR lakefs init --user-name demo | tail -3 > /home/lakefs/.lakectl.yaml
@@ -13,7 +13,7 @@ echo -e "server:\n  endpoint_url: http://localhost:8000/api/v1\n" >> /home/lakef
 EOS
 chmod +x lakefs/setup-lakefs.sh
 
-cat > /home/lakefs/docker-compose.yaml <<EOS
+cat <<EOS > /home/lakefs/docker-compose.yaml
 version: '3'
 services:
   lakefs:
