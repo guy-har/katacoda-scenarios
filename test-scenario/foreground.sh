@@ -1,1 +1,1 @@
-sleep 2; wait.sh && docker-compose exec lakefs sh
+sleep 2; wait.sh && docker-compose -f /root/lakefs/docker-compose.yaml exec lakefs sh
