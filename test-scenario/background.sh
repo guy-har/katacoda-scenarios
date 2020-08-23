@@ -3,15 +3,14 @@ set -o pipefail
 set -e
 touch ~/test.txt
 export LAKEFS_STATS_ENABLED=false
-mkdir ~/lakefs
 
-cat <<EOS > lakefs/setup-lakefs.sh
+cat <<EOS > setup-lakefs.sh
 #!/bin/bash
 wait-for localhost:8000
 LAKEFS_LOGGING_LEVEL=ERROR lakefs init --user-name demo | tail -3 > /home/lakefs/.lakectl.yaml
 echo -e "server:\n  endpoint_url: http://localhost:8000/api/v1\n" >> /home/lakefs/.lakectl.yaml
 EOS
-chmod +x lakefs/setup-lakefs.sh
+chmod +x setup-lakefs.sh
 
 cat <<EOS > docker-compose.yaml
 version: '3.8'
@@ -23,7 +22,7 @@ services:
     depends_on:
       - postgres
     volumes:
-      - lakefs:/home/lakefs
+      - lakefsdata:/home/lakefs
     environment:
       LAKEFS_AUTH_ENCRYPT_SECRET_KEY: some random secret string
       LAKEFS_DATABASE_CONNECTION_STRING: postgres://lakefs:lakefs@postgres/postgres?sslmode=disable
@@ -38,18 +37,14 @@ services:
       POSTGRES_PASSWORD: lakefs
   lakefs-setup:
     image: "treeverse/lakefs:latest"
-    command: /home/lakefs/setup-lakefs.sh
+    command: /setup-lakefs.sh
     depends_on:
       - lakefs
     volumes:
-      - lakefs:/home/lakefs
+      - ./lakefs/setup-lakefs.sh:/setup-lakefs.sh:ro
+      - lakefsdata:/home/lakefs
 volumes:
-  lakefs:
-    driver: local
-    driver_opts:
-      type: none
-      o: bind
-      device: ./lakefs
+  lakefsdata:
 EOS
 
 docker-compose pull
