@@ -41,7 +41,7 @@ services:
     depends_on:
       - lakefs
     volumes:
-      - ./lakefs/setup-lakefs.sh:/setup-lakefs.sh:ro
+      - ./setup-lakefs.sh:/setup-lakefs.sh:ro
       - lakefsdata:/home/lakefs
 volumes:
   lakefsdata:
