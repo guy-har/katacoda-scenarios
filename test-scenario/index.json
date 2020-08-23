@@ -33,10 +33,7 @@
     },
     "assets": {
       "host01": [
-        {
-          "file": "docker-compose.yaml",
-          "target": "~/lakefs/"
-        }
+        {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }
   },
