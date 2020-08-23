@@ -1,27 +1,12 @@
 touch ~/test.txt
 export LAKEFS_STATS_ENABLED=false
 mkdir ~/lakeFS
-echo "version: '3'
-services:
-  lakefs:
-    image: \"treeverse/lakefs:latest\"
-    ports: [\"8000:8000\"]
-    links: [\"postgres\"]
-    environment:
-      LAKEFS_AUTH_ENCRYPT_SECRET_KEY: some random secret string
-      LAKEFS_DATABASE_CONNECTION_STRING: postgres://lakefs:lakefs@postgres/postgres?sslmode=disable
-      LAKEFS_BLOCKSTORE_TYPE: local
-      LAKEFS_BLOCKSTORE_LOCAL_PATH: /home/lakefs
-      LAKEFS_GATEWAYS_S3_DOMAIN_NAME: s3.local.lakefs.io:8000
-    entrypoint: [\"/app/wait-for\", \"postgres:5432\", \"--\", \"/app/lakefs\", \"run\"]
-  postgres:
-    image: \"postgres:11\"
-    environment:
-      POSTGRES_USER: lakefs
-      POSTGRES_PASSWORD: lakefs" > ~/lakeFS/docker-compose.yaml
-     
 
-cd ~/lakeFS/
+wget  https://raw.githubusercontent.com/treeverse/lakeFS/master/docker-compose.yaml -P /home/lakefs/cd ~/lakeFS/
 docker-compose up -d
+docker-compose exec lakefs wait-for localhost:8000
+docker-compose exec -e LAKEFS_LOGGING_LEVEL=ERROR lakefs  sh -c 'lakefs init --user-name demo | tail -3 > /home/lakefs/.lakectl.yaml'
+docker-compose exec lakefs sh -c 'echo -e "server:\n  endpoint_url: http://localhost:8000/api/v1\n" >> /home/lakefs/.lakectl.yaml'
+
 docker-compose exec lakefs sh
- 
+
