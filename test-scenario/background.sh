@@ -4,16 +4,17 @@ set -e
 touch ~/test.txt
 export LAKEFS_STATS_ENABLED=false
 
-cat <<EOS > setup-lakefs.sh
+cat <<EOS > run-lakefs.sh
 #!/bin/bash
-wait-for localhost:8000
+wait-for postgres:5432
 LAKEFS_LOGGING_LEVEL=ERROR /app/lakefs init --user-name demo | tail -3 > /home/lakefs/.lakectl.yaml
 echo -e "server:\n  endpoint_url: http://localhost:8000/api/v1\n" >> /home/lakefs/.lakectl.yaml
+lakefs run
 EOS
-chmod +x setup-lakefs.sh
+chmod +x run-lakefs.sh
 
 cat <<EOS > docker-compose.yaml
-version: '3.8'
+version: '3'
 services:
   lakefs:
     image: "treeverse/lakefs:latest"
