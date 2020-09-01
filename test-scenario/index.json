@@ -7,24 +7,25 @@
 
     "steps": [
       {
-        "title": "Repository commands",
+        "title": "LakeFS Repository",
         "text": "step1.md"
       },
       {
-        "title": "FS commands",
+        "title": "LakeFS file commands",
         "text": "step2.md"
       },
       {
-        "title": "Commit commands",
+        "title": "LakeFS Commit commands",
         "text": "step3.md"
       },
       {
-        "title": "Diff commands",
+        "title": "LakeFS Diff commands",
         "text": "step4.md"
       }
     ],
     "intro": {
-      "code": "background.sh",
+      "courseData": "background.sh",
+      "code": "foreground.sh",
       "text": "intro.md"
     },
     "finish": {

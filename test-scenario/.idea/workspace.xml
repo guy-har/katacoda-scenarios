@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ace3678-8891-41aa-aa88-1842772b799a" name="Default Changelist" comment="add step4.md">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/background.sh" beforeDir="false" afterPath="$PROJECT_DIR$/background.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step1.md" beforeDir="false" afterPath="$PROJECT_DIR$/step1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step2.md" beforeDir="false" afterPath="$PROJECT_DIR$/step2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step3.md" beforeDir="false" afterPath="$PROJECT_DIR$/step3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step4.md" beforeDir="false" afterPath="$PROJECT_DIR$/step4.md" afterDir="false" />
     </list>
     <list id="564fbbff-fa11-4596-9e45-8017ff0d3c20" name="do not commit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,19 +47,6 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,6 +58,9 @@
       <updated>1597848136167</updated>
       <workItem from="1597848137243" duration="55000" />
       <workItem from="1597848210733" duration="5497000" />
+      <workItem from="1598602508337" duration="2541000" />
+      <workItem from="1598682536944" duration="551000" />
+      <workItem from="1598964228680" duration="245000" />
     </task>
     <task id="LOCAL-00001" summary="bug fix">
       <created>1597848317516</created>
