@@ -42,7 +42,7 @@ EOS
 
 docker-compose pull
 docker-compose up -d
-docker-compose exec lakefs sh
+#docker-compose exec lakefs sh
 
 echo "install presto"
 git clone https://github.com/treeverse/blog-presto-local.git
