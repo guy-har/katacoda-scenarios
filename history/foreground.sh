@@ -46,5 +46,5 @@ docker-compose up -d
 
 echo "install presto"
 git clone https://github.com/treeverse/blog-presto-local.git
-cd blog-presto-local/
+cd blog-presto-local/presto-standalone
 docker-compose up -d
