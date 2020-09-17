@@ -21,7 +21,6 @@
     "assets": {
       "host01": [
         {"file": "kataclient", "target": "/usr/local/bin/", "chmod": "+x"},
-        {"file": "lakectl", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     },
     "intro": {
