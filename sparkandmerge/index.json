@@ -18,6 +18,12 @@
         "text": "step3.md"
       }
     ],
+    "assets": {
+      "host01": [
+        {"file": "kataclient", "target": "/usr/local/bin/", "chmod": "+x"},
+        {"file": "lakectl", "target": "/usr/local/bin/", "chmod": "+x"}
+      ]
+    },
     "intro": {
       "text": "intro.md",
       "code": "foreground.sh"
