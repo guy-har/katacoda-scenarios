@@ -1,5 +1,2 @@
 #wait 2
-#kataclient
-#docker pull bitnami/spark
-#docker run -d --name spark bitnami/spark
-#docker exec spark spark-shell
+ssh -p 443 -i ~/.ssh/katacoda_rsa 3.236.12.181

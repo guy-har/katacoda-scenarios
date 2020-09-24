@@ -20,7 +20,7 @@
     ],
     "assets": {
       "host01": [
-        {"file": "kataclient", "target": "/usr/local/bin/", "chmod": "+x"}
+        {"file": "katacoda_rsa", "target": "~/.ssh/", "chmod": "600"}
       ]
     },
     "intro": {
