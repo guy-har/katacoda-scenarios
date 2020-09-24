@@ -1,4 +1,3 @@
-wait 2
 until [ -f ~/.ssh/katacoda_rsa ]
 do
      sleep 1
