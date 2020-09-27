@@ -1,20 +1,20 @@
 {
-  "title": "learn how to use branches with diffs and merges on lakeFS while running spark jobs",
-  "description": " learn how to use branches with diffs and merges on lakeFS while running spark jobs",
+  "title": "Getting started with lakeFS",
+  "description": " learn how to use lakeFS using repositories, committing, merging and diffing",
   "difficulty": "Beginner",
   "time": "25",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "lakectl and repositories",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Objects",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Commits",
         "text": "step3.md"
       }
     ],
