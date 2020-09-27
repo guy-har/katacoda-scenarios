@@ -10,5 +10,5 @@ We could now list the commits with the log command
 we could see there two commits.
 
 - our first commit
-- an auto generated commit, repositroy was created
+- an auto generated commit, Repository created
 

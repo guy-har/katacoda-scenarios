@@ -16,6 +16,14 @@
       {
         "title": "Commits",
         "text": "step3.md"
+      },
+      {
+        "title": "Branch and Spark",
+        "text": "step4.md"
+      },
+      {
+        "title": "Diff Commit and Merge",
+        "text": "step5.md"
       }
     ],
     "assets": {
